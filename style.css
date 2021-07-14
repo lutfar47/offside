@@ -12,8 +12,10 @@ main{
 }
 /* ---------------------------hero-section style-------------------------- */
 .hero-section{
-    display: flex;
     background-color: #2D25A0;
+}
+.text-banner{
+    display: flex;
     justify-content: space-around;
     height: 600px;
 }
@@ -114,8 +116,9 @@ main{
 
 /* -------------------------responsive mobile style---------------------------- */
 @media only screen and (max-width: 688px) {
-    .hero-section{
+    .text-banner{
         flex-direction: column;
+        width: 360px;
         height: 695px;
     }
     .hero-text{
