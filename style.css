@@ -13,7 +13,7 @@ main{
 /* ---------------------------hero-section style-------------------------- */
 .hero-section{
     display: flex;
-    background-color: rgb(38, 38, 180);
+    background-color: #2D25A0;
     justify-content: space-around;
     height: 600px;
 }
@@ -50,9 +50,11 @@ main{
     grid-row-gap: 30px;
 }
 .player{
-    background-color: wheat;
+    background-color: white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     width: 330px;
     height: 456px;
+    padding-bottom: 50px;
 }
 .player-photo{
     width: 300px;
@@ -69,7 +71,8 @@ main{
     font-size: 12px;
     color: #6C6C6C;
     font-weight: 300;
-    padding-left: 15px;
+    padding-left: 16px;
+    margin-top: 30px;
 }
 /* --------------------------watch highlights styles---------------------------- */
 .highlights{
@@ -93,7 +96,7 @@ main{
     color: white;
     margin-bottom: 24px;
 }
-.highlights-photo img{
+.highlights-video{
     width: 567px;
     height: 427px;
 }
@@ -107,4 +110,46 @@ main{
 }
 .social-link{
     color: #E02C6D;
+}
+
+/* -------------------------responsive mobile style---------------------------- */
+@media only screen and (max-width: 688px) {
+    .hero-section{
+        flex-direction: column;
+        height: 695px;
+    }
+    .hero-text{
+        padding-right: 50px;
+    }
+    .hero-text h1{
+        font-size: 36px;
+        font-weight: 700;
+        color: white;
+    }
+    .hero-banner img{
+        width: 329px;
+        height: 259px;
+        padding-left: 40px;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .highlights{
+        flex-direction: column;
+        margin: 0;
+    }
+    .highlights-text h2{
+        font-size: 36px;
+    }
+    .highlights-text{
+        padding-left: 30px;
+        margin-bottom: 50px;
+    }
+    .footer-item img{
+        width: 125px;
+        height: 30px;
+    }
+    .footer-item{
+        padding-top: 40px;
+    }
 }
